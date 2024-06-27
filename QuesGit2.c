@@ -6,8 +6,8 @@ char compare(char time1[], char time2[]) {
 	int d1,m1,y1;
 	int d2,m2,y2;
 
-	scanf(time1,"%d/%d/%d",&d1,&m1,&y1);
-	scanf(time2,"%d/%d/%d",&d2,&m2,&y2);
+	sscanf(time1,"%d/%d/%d",&d1,&m1,&y1);
+	sscanf(time2,"%d/%d/%d",&d2,&m2,&y2);
 
 	if(d1<d2 || (d1==d2 &&(m1<m2 || (m1==m2 && y1<y2)))){
 		return 'E';
